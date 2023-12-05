@@ -1,6 +1,6 @@
-answer = input("Would you like to play? (yes/no)")
+answer = input("Would you like to play? (y/n)")
 
-if answer.lower().strip() == "yes":
+if answer.lower().strip() == "y":
     answer = input(
         "Looks like you ended up in a crossroad after trying to defeat the puppet master! would you like to go (right) or (left) to start your journey?").lower().strip()
 
@@ -29,9 +29,9 @@ if answer.lower().strip() == "yes":
             if answer == "back":
                 answer = input("You caught the big fish successfully! would you like to go (sell) it in the Mountain Creek shop or would you like to (eat) it?")
             if answer == "sell":
-                answer = input("...")
+                answer = input("You sold it for 25 gold.")
             elif answer == "eat":
-                print("oops it was poisonous, You Died.")
+                print("Oops it was poisonous, You Died.")
 
 
             elif answer == "rifle":
